@@ -10,7 +10,7 @@ export default function Home() {
     if (typeof window === "undefined") return;
     const token = localStorage.getItem("authToken");
     if (token) {
-      router.replace("/dashboard");
+      router.replace("/product/1");
     } else {
       router.replace("/login");
     }
